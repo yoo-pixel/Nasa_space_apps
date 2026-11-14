@@ -1,0 +1,100 @@
+{
+  "files": [
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-569_GLDS-561_long-readRNAseq_raw_md5sum_GLlong-readRNAseq.txt",
+      "sha256": "5e7c9f2480888d626ddfd9b959b25a18aabf9e68df6f8d11f1cedcecd810d887",
+      "retrieved_at_utc": "2026-11-14T09:26:00.674968+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-569_GLDS-561_targetSeq_raw_md5sum_GLtargetSeq.txt",
+      "sha256": "da3caafb55d296143590407e1c43866a8f753f1880513d54be26915073a5a294",
+      "retrieved_at_utc": "2026-11-14T09:26:00.679965+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-569_LSDS-7_Complete_Blood_Count_CBC.upload_SUBMITTED.csv",
+      "sha256": "10a878b009eb2ea11a13fe92ad698098858639e8ed02f5ee849431313b9457d3",
+      "retrieved_at_utc": "2026-11-14T09:26:00.684965+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-569_LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv",
+      "sha256": "32e4f9c97d3b636b5d5c2e72dab8c4d3319dee64c437508b092dad04603b2b8f",
+      "retrieved_at_utc": "2026-11-14T09:26:00.691965+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-571_GLDS-563_metabolomics_raw_md5sum_GLmetabolomics.txt",
+      "sha256": "90cf43ebf54e74ad9cd35cb86fef81432e0060f4a78cad44ffccc3ed228a63d5",
+      "retrieved_at_utc": "2026-11-14T09:26:00.699159+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-571_GLDS-563_proteomics_EVPs_proteomics_preprocessed_data.txt",
+      "sha256": "8fa0317a6c26e70a89867e6e8a8ea28a4153071a15f9e39071d985c6d140135c",
+      "retrieved_at_utc": "2026-11-14T09:26:00.703392+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-571_GLDS-563_proteomics_EVPs_sample_metadata.csv",
+      "sha256": "4261f46430ca5b2faa19c0a16308c4fdea267ab86efc883e30560266bdcab158",
+      "retrieved_at_utc": "2026-11-14T09:26:00.708400+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-571_GLDS-563_proteomics_plasma_metadata_all_samples_collapsed.csv",
+      "sha256": "cfaae5e09de392c0ee1e708218224261ea803b11e1a27e64471df66cb9032f54",
+      "retrieved_at_utc": "2026-11-14T09:26:00.713400+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-571_GLDS-563_proteomics_plasma_proteomics_preprocessed_data.tsv",
+      "sha256": "1c72727b438a7ecfeac658072269947c6d43fca2f978e8d5c864cfcb0f03809e",
+      "retrieved_at_utc": "2026-11-14T09:26:00.783951+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-571_GLDS-563_proteomics_raw_md5sum_GLproteomics-EVP.txt",
+      "sha256": "78ca72494ea0661227754bdbae8cf889d43a555315d2e8eb49bb36a5b5d76fc5",
+      "retrieved_at_utc": "2026-11-14T09:26:00.788958+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-575_LSDS-8_Comprehensive_Metabolic_Panel_CMP.upload_SUBMITTED.csv",
+      "sha256": "dab247eb794edab59aaaa683c85fd1f2dbf4ae3684872739338e10ead4192a0c",
+      "retrieved_at_utc": "2026-11-14T09:26:00.794957+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-575_LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+      "sha256": "5eb1e7f025dd8443a9e70111e62bc32afae3432753024489c5c013e401d709d9",
+      "retrieved_at_utc": "2026-11-14T09:26:00.803110+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-575_LSDS-8_Multiplex_serum.cardiovascular.EvePanel_SUBMITTED.csv",
+      "sha256": "a6422f9b13099f7a220fb1743be71ba1fa3b733ef26318c6c345abc3a295e96c",
+      "retrieved_at_utc": "2026-11-14T09:26:00.809118+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-575_LSDS-8_Multiplex_serum.immune.AlamarPanel_TRANSFORMED.csv",
+      "sha256": "b53bcf9c325ae1d86e6d0d16df31ddd123423f449c7d550ac026ee01659241bc",
+      "retrieved_at_utc": "2026-11-14T09:26:00.819110+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-575_LSDS-8_Multiplex_serum.immune.EvePanel_SUBMITTED.csv",
+      "sha256": "41ef14a71dbe830a0ead1daac8c87258c41536da505bb4cd60683bb97d8c914b",
+      "retrieved_at_utc": "2026-11-14T09:26:00.830118+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-575_LSDS-8_Multiplex_serum_cardiovascular_EvePanel_TRANSFORMED.csv",
+      "sha256": "fdba6c3ce45401c12ca9b699fa375303793959aa0391e2f3c722f354d9cfc75c",
+      "retrieved_at_utc": "2026-11-14T09:26:00.837928+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-575_LSDS-8_Multiplex_serum_immune_EvePanel_TRANSFORMED.csv",
+      "sha256": "efa8fb807e3b7e363df47f64f48d03c57d2397daf8fd22afc0ea4335d5d3d53e",
+      "retrieved_at_utc": "2026-11-14T09:26:00.845237+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-656_LSDS-64_Multiplex_200plex_v1-Target_Information.csv",
+      "sha256": "7ced5075db3df9e47b8cf14e1bc57e49ab34cb49b6d5f76325d6def88ae7ee2a",
+      "retrieved_at_utc": "2026-11-14T09:26:00.849221+00:00"
+    },
+    {
+      "path": "C:\\Users\\Mostafa\\Downloads\\AstroGuard\\backend\\data\\raw\\osdr\\OSD-656_LSDS-64_Multiplex_urine.immune.AlamarPanel_TRANSFORMED.csv",
+      "sha256": "f81b6dff9c34accab6dffe7a0b2970854f2f0b8d2712e92cfd0e91e6bb59c94a",
+      "retrieved_at_utc": "2026-11-14T09:26:00.857115+00:00"
+    }
+  ],
+  "data_note": "Raw research files are not training labels."
+}

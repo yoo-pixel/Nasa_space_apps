@@ -8,6 +8,7 @@ from sqlalchemy.pool import StaticPool
 from app.api.v1.router import api_router
 from app.db.base import Base
 from app.db.dependencies import get_db
+from app.ml_router import router as ml_router
 from app.models import Astronaut, MetricBaseline, Mission
 
 
@@ -33,6 +34,7 @@ def client():
 
     app = FastAPI()
     app.include_router(api_router, prefix="/api/v1")
+    app.include_router(ml_router, prefix="/api/v1")
 
     def override_get_db():
         with TestingSession() as db:

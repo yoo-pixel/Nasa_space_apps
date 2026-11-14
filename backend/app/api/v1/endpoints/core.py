@@ -1,19 +1,26 @@
 from datetime import datetime, timezone
 from uuid import UUID
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session, joinedload
 from app.db.dependencies import get_db
 from app.models import Alert, AnalysisResult, Astronaut, DataSource, MedicalHistory, Measurement, MetricBaseline, Mission
 from app.schemas.schemas import AlertOut, AlertPatch, AnalysisOut, AstronautCreate, AstronautOut, AstronautPatch, BaselineOut, DashboardSummary, DataSourceOut, MedicalHistoryCreate, MedicalHistoryOut, MedicalHistoryPatch, MeasurementCreate, MeasurementOut, MissionCreate, MissionOut
 from app.services.analysis_service import run_analysis
+from app.ml_router import registry_for_request
 
 router = APIRouter()
 
 @router.get("/health")
-def health(db: Session = Depends(get_db)) -> dict:
+def health(request: Request, db: Session = Depends(get_db)) -> dict:
     db.execute(select(1))
-    return {"status": "ok", "service": "astroguard-api", "database": "connected"}
+    registry = registry_for_request(request)
+    return {
+        "status": "ok", "service": "astroguard-api", "database": "connected",
+        "models_loaded": [name for name, info in registry["status"].items() if info["loaded"]],
+        "models": registry["status"],
+        "model_data_origin": registry["data_origin"],
+    }
 
 @router.get("/dashboard/summary", response_model=DashboardSummary)
 def dashboard_summary(db: Session = Depends(get_db)):

@@ -1,0 +1,204 @@
+Target,AlamarTargetID,UniProtID,ProteinName,GeneName
+"AGER, Human",t5521,Q15109,Advanced glycosylation end product-specific receptor,AGER
+"AGRP, Human",t5469,O00253,Agouti-related protein,AGRP
+"ANGPT1, Human",t5018,Q15389,Angiopoietin-1,ANGPT1
+"ANXA1, Human",t4910,P04083,Annexin A1,ANXA1
+"BDNF, Human",t8399,P23560,Brain-derived neurotrophic factor,BDNF
+"BMP10, Human",t6587,O95393,Bone morphogenetic protein 10,BMP10
+"BMP7, Human",t8269,P18075,Bone morphogenetic protein 7,BMP7
+"C1QA, Human",t10433,P02745,Complement C1q A chain,C1QA
+"CCL1, Human",t8334,P22362,C-C motif chemokine 1,CCL1
+"CCL13, Human",t8332,Q99616,C-C motif chemokine 13,CCL13
+"CCL14, Human",t8331,Q16627,C-C motif chemokine 14,CCL14
+"CCL15, Human",t8330,Q16663,C-C motif chemokine 15,CCL15
+"CCL16, Human",t8329,O15467,C-C motif chemokine 16,CCL16
+"CCL17, Human",t8328,Q92583,C-C motif chemokine 17,CCL17
+"CCL19, Human",t8326,Q99731,C-C motif chemokine 19,CCL19
+"CCL2, Human",t8325,P13500,C-C motif chemokine 2,CCL2
+"CCL20, Human",t8324,P78556,C-C motif chemokine 20,CCL20
+"CCL22, Human",t8321,O00626,C-C motif chemokine 22,CCL22
+"CCL23, Human",t8320,P55773,C-C motif chemokine 23,CCL23
+"CCL24, Human",t8319,O00175,C-C motif chemokine 24,CCL24
+"CCL25, Human",t8318,O15444,C-C motif chemokine 25,CCL25
+"CCL28, Human",t7024,Q9NRJ3,C-C motif chemokine 28,CCL28
+"CCL3, Human",t8315,P10147,C-C motif chemokine 3,CCL3
+"CCL4, Human",t10876,P13236,C-C motif chemokine ligand 4,CCL4
+"CCL5, Human",t8311,P13501,C-C motif chemokine 5,CCL5
+"CCL7, Human",t8310,P80098,C-C motif chemokine 7,CCL7
+"CCL8, Human",t8309,P80075,C-C motif chemokine 8,CCL8
+"CD200, Human",t4399,P41217,OX-2 membrane glycoprotein,CD200
+"CD200R1, Human",t6290,Q8TD46,Cell surface glycoprotein CD200 receptor 1,CD200R1
+"CD274, Human",t7035,Q9NZQ7,"Programmed cell death 1 ligand 1, PD-L1",CD274
+"CD276, Human",t14662,Q5ZPR3,CD276 molecule,CD276
+"CD40, Human",t11248,P25942,CD40 molecule,CD40
+"CD70, Human",t7929,P32970,CD70 antigen,CD70
+"CD83, Human",t7143,Q01151,CD83 antigen,CD83
+"CD93, Human",t7380,Q9NPY3,Complement component C1q receptor,CD93
+"CEACAM5, Human",t10514,P06731,Carcinoembryonic antigen related cell adhesion molecule 5,CEACAM5
+"CHI3L1, Human",t6758,P36222,Chitinase-3-like protein 1,CHI3L1
+"CLCF1, Human",t21573,Q9UBD9,Cardiotrophin like cytokine factor 1,CLCF1
+"CLEC4A, Human",t7726,Q9UMR7,C-type lectin domain family 4 member A,CLEC4A
+"CSF1, Human",t6276,P09603,Macrophage colony-stimulating factor 1,CSF1
+"CSF2RB, Human",t6266,P32927,Cytokine receptor common subunit beta,CSF2RB
+"CSF3, Human",t6263,P09919,"Granulocyte colony-stimulating factor, G-CSF",CSF3
+"CSF3R, Human",t6262,Q99062,Granulocyte colony-stimulating factor receptor,CSF3R
+"CST7, Human",t6198,O76096,Cystatin-F,CST7
+"CTF1, Human",t6166,Q16619,Cardiotrophin-1,CTF1
+"CTLA4, Human",t6154,P16410,Cytotoxic T-lymphocyte protein 4,CTLA4
+"CTSS, Human",t6100,P25774,Cathepsin S,CTSS
+"CX3CL1, Human",t8300,P78423,Fractalkine,CX3CL1
+"CXADR, Human",t6074,P78310,Coxsackievirus and adenovirus receptor,CXADR
+"CXCL1, Human",t5070,P09341,Growth-regulated alpha protein,CXCL1
+"CXCL10, Human",t8308,P02778,C-X-C motif chemokine 10,CXCL10
+"CXCL12, Human",t8295,P48061,Stromal cell-derived factor 1,CXCL12
+"CXCL13, Human",t8306,O43927,C-X-C motif chemokine 13,CXCL13
+"CXCL14, Human",t8305,O95715,C-X-C motif chemokine 14,CXCL14
+"CXCL2, Human",t11070,P19875,C-X-C motif chemokine ligand 2,CXCL2
+"CXCL3, Human",t11071,P19876,C-X-C motif chemokine ligand 3,CXCL3
+"CXCL5, Human",t8304,P42830,C-X-C motif chemokine 5,CXCL5
+"CXCL8, Human",t4761,P10145,"Interleukin-8, IL8",CXCL8
+"CXCL9, Human",t4426,Q07325,C-X-C motif chemokine 9,CXCL9
+"EGF, Human",t5505,P01133,Pro-epidermal growth factor,EGF
+"EPO, Human",t5404,P01588,Erythropoietin,EPO
+"FAM3D, Human",t6853,Q96BQ1,Protein FAM3D,FAM3D
+"FASLG, Human",t7930,P48023,Tumor necrosis factor ligand superfamily member 6,FASLG
+"FGF19, Human",t5317,O95750,Fibroblast growth factor 19,FGF19
+"FGF2, Human",t5316,P09038,Fibroblast growth factor 2,FGF2
+"FGF21, Human",t21015,Q9NSA1,Fibroblast growth factor 21,FGF21
+"FGF23, Human",t5313,Q9GZV9,Fibroblast growth factor 23,FGF23
+"FLT1, Human",t5274,P17948,Vascular endothelial growth factor receptor 1,FLT1
+"FLT3LG, Human",t5272,P49771,Fms-related tyrosine kinase 3 ligand,FLT3LG
+"FTH1, Human",t10438,P02794,Ferritin heavy chain 1,FTH1
+"GDF15, Human",t5665,Q99988,Growth/differentiation factor 15,GDF15
+"GDF2, Human",t5169,Q9UK05,Growth/differentiation factor 2,GDF2
+"GFAP, Human",t5158,P14136,Glial fibrillary acidic protein,GFAP
+"GRN, Human",t5071,P28799,Progranulin,GRN
+"GZMB, Human",t5045,P10144,Granzyme B,GZMB
+"HGF, Human",t5002,P14210,Hepatocyte growth factor,HGF
+"IFNA1; IFNA13, Human",t22707,P01562,Interferon alpha-1/13,IFNA1; IFNA13
+"IFNA2, Human",t4877,P01563,Interferon alpha-2,IFNA2
+"IFNB1, Human",t4868,P01574,Interferon beta,IFNB1
+"IFNG, Human",t4867,P01579,Interferon gamma,IFNG
+"IFNL1, Human",t6899,Q8IU54,Interferon lambda-1,IFNL1
+"IFNW1, Human",t4863,P05000,Interferon omega-1,IFNW1
+"IL10, Human",t4818,P22301,Interleukin-10,IL10
+"IL10RB, Human",t4816,Q08334,Interleukin-10 receptor subunit beta,IL10RB
+"IL11, Human",t4815,P20809,Interleukin-11,IL11
+"IL12RB1, Human",t4810,P42701,Interleukin-12 receptor subunit beta-1,IL12RB1
+"IL13, Human",t4808,P35225,Interleukin-13,IL13
+"IL13RA2, Human",t13217,Q14627,Interleukin 13 receptor subunit alpha 2,IL13RA2
+"IL15RA, Human",t4805,Q13261,Interleukin-15 receptor subunit alpha,IL15RA
+"IL16, Human",t4803,Q14005,Pro-interleukin-16,IL16
+"IL17A, Human",t4802,Q16552,Interleukin-17A,IL17A
+"IL17B, Human",t4801,Q9UHF5,Interleukin-17B,IL17B
+"IL17C, Human",t4800,Q9P0M4,Interleukin-17C,IL17C
+"IL17F, Human",t7277,Q96PD4,Interleukin-17F,IL17F
+"IL17RB, Human",t6962,Q9NRM6,Interleukin-17 receptor B,IL17RB
+"IL18, Human",t4797,Q14116,Interleukin-18,IL18
+"IL18BP, Human",t4796,O95998,Interleukin-18-binding protein,IL18BP
+"IL18R1, Human",t4795,Q13478,Interleukin-18 receptor 1,IL18R1
+"IL19, Human",t4793,Q9UHD0,Interleukin-19,IL19
+"IL1B, Human",t4791,P01584,Interleukin-1 beta,IL1B
+"IL1R2, Human",t4789,P27930,Interleukin-1 receptor type 2,IL1R2
+"IL1RL1, Human",t4786,Q01638,Interleukin-1 receptor-like 1,IL1RL1
+"IL1RN, Human",t4783,P18510,Interleukin-1 receptor antagonist protein,IL1RN
+"IL20, Human",t4781,Q9NYY1,Interleukin-20,IL20
+"IL22, Human",t7506,Q9GZX6,Interleukin-22,IL22
+"IL2RA, Human",t4776,P01589,Interleukin-2 receptor subunit alpha,IL2RA
+"IL2RB, Human",t4775,P14784,Interleukin-2 receptor subunit beta,IL2RB
+"IL32, Human",t7216,P24001,Interleukin-32,IL32
+"IL33, Human",t10319,O95760,Interleukin 33,IL33
+"IL34, Human",t5855,Q6ZMJ4,Interleukin-34,IL34
+"IL36A, Human",t7433,Q9UHA7,Interleukin-36 alpha,IL36A
+"IL36G, Human",t7408,Q9NZH8,Interleukin-36 gamma,IL36G
+"IL3RA, Human",t4772,P26951,Interleukin-3 receptor subunit alpha,IL3RA
+"IL4, Human",t4771,P05112,Interleukin-4,IL4
+"IL4R, Human",t4770,P24394,Interleukin-4 receptor subunit alpha,IL4R
+"IL5, Human",t4769,P05113,Interleukin-5,IL5
+"IL5RA, Human",t4768,Q01344,Interleukin-5 receptor subunit alpha,IL5RA
+"IL6, Human",t4767,P05231,Interleukin-6,IL6
+"IL6R, Human",t4766,P08887,Interleukin-6 receptor subunit alpha,IL6R
+"IL7, Human",t4763,P13232,Interleukin-7,IL7
+"IL7R, Human",t4762,P16871,Interleukin-7 receptor subunit alpha,IL7R
+"IL9, Human",t4760,P15248,Interleukin-9,IL9
+"IRAK4, Human",t6972,Q9NWZ3,Interleukin-1 receptor-associated kinase 4,IRAK4
+"KDR, Human",t4678,P35968,Vascular endothelial growth factor receptor 2,KDR
+"KITLG, Human",t4661,P21583,Kit ligand,KITLG
+"LAG3, Human",t4620,P18627,Lymphocyte activation gene 3 protein,LAG3
+"LAMP3, Human",t22133,Q9UQV4,Lysosomal associated membrane protein 3,LAMP3
+"LCN2, Human",t4602,P80188,Neutrophil gelatinase-associated lipocalin,LCN2
+"LGALS9, Human",t4581,O00182,Galectin-9,LGALS9
+"LIF, Human",t4576,P15018,Leukemia inhibitory factor,LIF
+"LTBR, Human",t4540,P36941,Tumor necrosis factor receptor superfamily member 3,LTBR
+"MDK, Human",t4454,P21741,Midkine,MDK
+"MERTK, Human",t12859,Q12866,"MER proto-oncogene, tyrosine kinase",MERTK
+"MET, Human",t4447,P08581,Hepatocyte growth factor receptor,MET
+"MICA, Human",t4430,Q29983,MHC class I polypeptide-related sequence A,MICA
+"MICB, Human",t4429,Q29980,MHC class I polypeptide-related sequence B,MICB
+"MIF, Human",t4427,P14174,Macrophage migration inhibitory factor,MIF
+"MMP10, Human",t4414,P09238,Stromelysin-2,MMP10
+"MMP12, Human",t4413,P39900,Macrophage metalloelastase,MMP12
+"MMP3, Human",t4405,P08254,Stromelysin-1,MMP3
+"MMP8, Human",t4403,P22894,Neutrophil collagenase,MMP8
+"MMP9, Human",t4402,P14780,Matrix metalloproteinase-9,MMP9
+"MPO, Human",t4395,P05164,Myeloperoxidase,MPO
+"MUC16, Human",t7427,Q8WXI7,Mucin-16,MUC16
+"NCR1, Human",t4532,O76036,Natural cytotoxicity triggering receptor 1,NCR1
+"NGF, Human",t4292,P01138,Beta-nerve growth factor,NGF
+"OSM, Human",t4191,P13725,Oncostatin-M,OSM
+"PDCD1, Human",t4125,Q15116,Programmed cell death protein 1,PDCD1
+"PDGFA, Human",t4109,P04085,Platelet-derived growth factor subunit A,PDGFA
+"PTX3, Human",t3808,P26022,Pentraxin-related protein PTX3,PTX3
+"S100A12, Human",t8367,P80511,Protein S100-A12,S100A12
+"S100A9, Human",t8358,P06702,Protein S100-A9,S100A9
+"SCG2, Human",t10883,P13521,Secretogranin II,SCG2
+"SELE, Human",t8286,P16581,E-selectin,SELE
+"SLURP1, Human",t12064,P55000,Secreted LY6/PLAUR domain containing 1,SLURP1
+"SPP1, Human",t8131,P10451,Osteopontin,SPP1
+"TAFA5, Human",t6509,Q7Z5A7,Chemokine-like protein TAFA-5,TAFA5
+"TGFB1, Human",t8006,P01137,Transforming growth factor beta-1 proprotein,TGFB1
+"TGFB3, Human",t8004,P10600,Transforming growth factor beta-3 proprotein,TGFB3
+"THPO, Human",t7992,P40225,Thrombopoietin,THPO
+"TIMP1, Human",t7983,P01033,Metalloproteinase inhibitor 1,TIMP1
+"TIMP2, Human",t7982,P16035,Metalloproteinase inhibitor 2,TIMP2
+"TLR3, Human",t7971,O15455,Toll-like receptor 3,TLR3
+"TNF, Human",t7958,P01375,Tumor necrosis factor,TNF
+"TNFRSF11A, Human",t22619,Q9Y6Q6,TNF receptor superfamily member 11a,TNFRSF11A
+"TNFRSF13C, Human",t7018,Q96RJ3,Tumor necrosis factor receptor superfamily member 13C,TNFRSF13C
+"TNFRSF14, Human",t7951,Q92956,Tumor necrosis factor receptor superfamily member 14,TNFRSF14
+"TNFRSF17, Human",t7950,Q02223,Tumor necrosis factor receptor superfamily member 17,TNFRSF17
+"TNFRSF18, Human",t7949,Q9Y5U5,Tumor necrosis factor receptor superfamily member 18,TNFRSF18
+"TNFRSF1A, Human",t7947,P19438,Tumor necrosis factor receptor superfamily member 1A,TNFRSF1A
+"TNFRSF1B, Human",t7946,P20333,Tumor necrosis factor receptor superfamily member 1B,TNFRSF1B
+"TNFRSF4, Human",t7945,P43489,Tumor necrosis factor receptor superfamily member 4,TNFRSF4
+"TNFRSF8, Human",t7941,P28908,Tumor necrosis factor receptor superfamily member 8,TNFRSF8
+"TNFRSF9, Human",t7940,Q07011,Tumor necrosis factor receptor superfamily member 9,TNFRSF9
+"TNFSF10, Human",t7939,P50591,Tumor necrosis factor ligand superfamily member 10,TNFSF10
+"TNFSF11, Human",t7938,O14788,Tumor necrosis factor ligand superfamily member 11,TNFSF11
+"TNFSF12, Human",t7937,O43508,Tumor necrosis factor ligand superfamily member 12,TNFSF12
+"TNFSF13B, Human",t7936,Q9Y275,Tumor necrosis factor ligand superfamily member 13B,TNFSF13B
+"TNFSF15, Human",t7934,O95150,Tumor necrosis factor ligand superfamily member 15,TNFSF15
+"TNFSF4, Human",t7932,P23510,Tumor necrosis factor ligand superfamily member 4,TNFSF4
+"TNFSF8, Human",t7928,P32971,Tumor necrosis factor ligand superfamily member 8,TNFSF8
+"TNFSF9, Human",t7927,P41273,Tumor necrosis factor ligand superfamily member 9,TNFSF9
+"TREM1, Human",t7015,Q9NP99,Triggering receptor expressed on myeloid cells 1,TREM1
+"TSLP, Human",t5586,Q969D9,Thymic stromal lymphopoietin,TSLP
+"VCAM1, Human",t7802,P19320,Vascular cell adhesion protein 1,VCAM1
+"VEGFA, Human",t7798,P15692,Vascular endothelial growth factor A,VEGFA
+"VEGFC, Human",t7796,P49767,Vascular endothelial growth factor C,VEGFC
+"VEGFD, Human",t22682,O43915,Vascular endothelial growth factor D,VEGFD
+"VSNL1, Human",t7785,P62760,Visinin-like protein 1,VSNL1
+"VSTM1, Human",t15215,Q6UX27,V-set and transmembrane domain containing 1,VSTM1
+"WNT16, Human",t21611,Q9UBV4,Wnt family member 16,WNT16
+"WNT7A, Human",t7772,O00755,Protein Wnt-7a,WNT7A
+"Inhibin A, Human",t22708,P05111|P08476,Inhibin alpha chain|Inhibin beta A chain,INHA|INHBA
+"Inhibin B, Human",t22709,P05111|P09529,Inhibin alpha chain|Inhibin beta B chain,INHA|INHBB
+"Activin A, Human",t22711,P08476|P08476,Inhibin beta A chain|Inhibin beta A chain,INHBA|INHBA
+"Activin AB, Human",t22706,P08476|P09529,Inhibin beta A chain|Inhibin beta B chain,INHBA|INHBB
+"Activin B, Human",t22712,P09529|P09529,Inhibin beta B chain|Inhibin beta B chain,INHBB|INHBB
+"IL12B, Human",t4811,P29460,Interleukin-12 subunit beta,IL12B
+"IL12p70, Human",t4813,P29459|P29460,Interleukin-12 subunit beta|Interleukin-12 subunit alpha,IL12A|IL12B
+"IL23, Human",t7450,P29460|Q9NPF7,Interleukin-12 subunit beta|Interleukin-23 subunit alpha,IL12B|IL23A
+"IL27, Human",t22710,Q8NEV9|Q14213,Interleukin 27|Interleukin-27 subunit beta,IL27A|EBI3
+"IL35, Human",t22704,P29459|Q14213,Interleukin 12A|Interleukin-27 subunit beta,IL12A|EBI3
+"IL39, Human",t22705,Q9NPF7|Q14213,Interleukin 23 subunit alpha|Interleukin-27 subunit beta,IL23A|EBI3
