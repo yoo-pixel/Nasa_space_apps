@@ -1,0 +1,23 @@
+{
+  "source": "NASA OSDR RadLab",
+  "source_url": "https://visualization.osdr.nasa.gov/radlab/api/?spacecraft=ISS&instrument=DosTel1&timestamp%3E=2023-01-01T00%3A00&timestamp%3C2023-01-01T01%3A00&absorbed_dose_rate&dose_equivalent_rate&latitude&longitude&altitude&format=json",
+  "retrieved_at": "2026-11-13T15:48:03.7712708+02:00",
+  "spacecraft": "ISS",
+  "instrument": "DosTel1",
+  "time_start_utc": "2023-01-01T00:00:00Z",
+  "time_end_utc_exclusive": "2023-01-01T01:00:00Z",
+  "record_count": 34,
+  "raw_file": "data/nasa/radiation/raw/radlab_iss_dostel1_2023-01-01_0000-0100Z.json",
+  "processed_file": "data/nasa/radiation/processed/radlab_iss_dostel1_2023-01-01_0000-0100Z.csv",
+  "sha256": "74B564748CF4C9DF07C6E44143A2072077D112F30B7D7C28A31FE97078F0BF0C",
+  "units": {
+    "longitude": "degrees",
+    "altitude": "km",
+    "absorbed_dose_rate": "µGy/hour",
+    "dose_equivalent_rate": "µSv/hour",
+    "latitude": "degrees"
+  },
+  "caveat": "Instrument telemetry describes environmental radiation registered by the selected detector. It is not an individual astronaut dosimeter record.",
+  "access_conditions": "Public API query; confirm current NASA terms and record context before redistribution or analytical reuse.",
+  "processing": "Raw JSON preserved unchanged. CSV is derived from the response rows with UTC timestamps and unit-bearing column names; numeric values and nulls were otherwise retained."
+}
