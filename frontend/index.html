@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#09111f">
+    <title>AstroGuard | Mission Health Demo</title>
+    <link rel="stylesheet" href="/dashboard-assets/style.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="/dashboard"><span class="brand-mark">A</span><span>ASTROGUARD</span></a>
+        <span class="environment-label"><span class="status-dot"></span> RESEARCH DEMO</span>
+      </header>
+
+      <section class="hero">
+        <p class="eyebrow">UNIFIED DATA → ML PIPELINE</p>
+        <h1>Mission health<br><span>monitoring demo</span></h1>
+        <p class="lede">Explore the repository’s simulated astronaut dataset as it moves through normalization, forecasting, and alert checks.</p>
+        <div class="disclaimer"><strong>Synthetic data only.</strong> Forecasts and demo alerts are not medical estimates, diagnoses, or NASA-approved limits.</div>
+      </section>
+
+      <section class="panel pipeline-panel" aria-labelledby="pipeline-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow">PIPELINE STATUS</p><h2 id="pipeline-heading">Data sources and model artifacts</h2></div>
+          <span id="connection-status" class="pill pending">Checking…</span>
+        </div>
+        <div id="pipeline-status" class="pipeline-grid"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+      </section>
+
+      <section class="panel forecast-panel" aria-labelledby="forecast-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow">LOCAL DATA FORECAST</p><h2 id="forecast-heading">Choose a demo crewmember</h2></div>
+          <span class="pill synthetic">SIMULATED</span>
+        </div>
+        <form id="forecast-form" class="controls">
+          <label>Astronaut
+            <select id="astronaut-id">
+              <option value="AG-001">AG-001 · Alpha</option>
+              <option value="AG-002">AG-002 · Bravo</option>
+              <option value="AG-003">AG-003 · Charlie</option>
+            </select>
+          </label>
+          <label>Mission day
+            <input id="mission-day" type="number" min="1" max="45" value="20" required>
+          </label>
+          <button id="run-forecast" type="submit">Run forecast <span aria-hidden="true">↗</span></button>
+        </form>
+        <p id="forecast-status" class="muted" role="status">Select a crewmember and mission day to load the normalized data and forecast.</p>
+        <div id="data-quality" class="quality-note" hidden></div>
+        <div id="alerts" class="alerts" hidden></div>
+        <div id="systems" class="systems-grid"></div>
+      </section>
+
+      <footer>AstroGuard prototype · <a href="/docs">API documentation</a> · <a href="/api/v1/ml/model-info">Model details</a></footer>
+    </main>
+    <script src="/dashboard-assets/app.js" defer></script>
+  </body>
+</html>

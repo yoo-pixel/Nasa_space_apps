@@ -113,20 +113,44 @@ def _model() -> MultiOutputRegressor:
 def detect_sudden_changes(artifact: dict[str, Any], current: dict[str, float], previous: dict[str, float] | None = None) -> dict[str, Any]:
     """IsolationForest context plus explicit demo triggers; no medical diagnosis."""
     columns = artifact["feature_columns"]
-    vector = pd.DataFrame([[float(current.get(name, 0.0)) for name in columns]], columns=columns)
-    anomaly = int(artifact["estimator"].predict(vector)[0]) == -1
+    complete_vector = all(
+        name in current and np.isfinite(float(current[name]))
+        for name in columns
+    )
+    if complete_vector:
+        vector = pd.DataFrame([[float(current[name]) for name in columns]], columns=columns)
+        anomaly: bool | None = int(artifact["estimator"].predict(vector)[0]) == -1
+    else:
+        # Do not turn missing sensors into zeros and call the resulting point
+        # anomalous. Explicit threshold checks below still work for observed
+        # fields; the multivariate detector is marked as unavailable.
+        anomaly = None
     triggers = []
     if previous:
-        if "sbp_mmhg" in current and "sbp_mmhg" in previous and previous["sbp_mmhg"] - current["sbp_mmhg"] > 15:
+        if (
+            "sbp_mmhg" in current and "sbp_mmhg" in previous
+            and np.isfinite(float(current["sbp_mmhg"]))
+            and np.isfinite(float(previous["sbp_mmhg"]))
+            and previous["sbp_mmhg"] - current["sbp_mmhg"] > 15
+        ):
             triggers.append("demo_sbp_drop_gt_15_mmhg")
-        if "daily_rad_rate_msv" in current and current["daily_rad_rate_msv"] > 5:
+        if "daily_rad_rate_msv" in current and np.isfinite(float(current["daily_rad_rate_msv"])) and current["daily_rad_rate_msv"] > 5:
             triggers.append("demo_daily_radiation_gt_5_msv")
-    if current.get("cabin_co2_mmhg", 0) > 3.5:
+    if "cabin_co2_mmhg" in current and np.isfinite(float(current["cabin_co2_mmhg"])) and current["cabin_co2_mmhg"] > 3.5:
         triggers.append("demo_cabin_co2_gt_3_5_mmhg")
-    return {"anomaly_detected": anomaly or bool(triggers), "isolation_forest_flag": anomaly, "demo_triggers": triggers, "interpretation": "Research demo flag only; review source quality and mission procedures."}
+    return {
+        "anomaly_detected": bool(anomaly) or bool(triggers),
+        "isolation_forest_flag": anomaly,
+        "demo_triggers": triggers,
+        "interpretation": (
+            "Research demo flag only; review source quality and mission procedures."
+            if complete_vector else
+            "Explicit demo triggers used observed sensors; IsolationForest skipped because required sensor inputs were incomplete."
+        ),
+    }
 
 
-def _validate_grouped(features: pd.DataFrame, labels: pd.DataFrame, groups: pd.Series) -> dict[str, float]:
+def _validate_grouped(features: pd.DataFrame, labels: pd.DataFrame, groups: pd.Series) -> dict[str, Any]:
     splitter = GroupKFold(n_splits=3)
     scores = []
     # Grouped validation uses a representative horizon target to keep CPU time
@@ -137,7 +161,15 @@ def _validate_grouped(features: pd.DataFrame, labels: pd.DataFrame, groups: pd.S
         predictor.fit(features.iloc[train_idx], labels[target].iloc[train_idx])
         pred = predictor.predict(features.iloc[valid_idx])
         scores.append((mean_absolute_error(labels[target].iloc[valid_idx], pred), mean_squared_error(labels[target].iloc[valid_idx], pred) ** 0.5))
-    return {"groupkfold_mae": float(np.mean([score[0] for score in scores])), "groupkfold_rmse": float(np.mean([score[1] for score in scores]))}
+    return {
+        "groupkfold_mae": float(np.mean([score[0] for score in scores])),
+        "groupkfold_rmse": float(np.mean([score[1] for score in scores])),
+        "evaluation_target": target,
+        "evaluation_horizon_days": 1,
+        "evaluation_unit": "bpm",
+        "evaluation_astronaut_groups": int(groups.nunique()),
+        "evaluation_note": "Grouped holdout on synthetic data for heart rate at t+1 only; not clinical performance and not a score for the other systems or horizons.",
+    }
 
 
 def forecast_trajectory(artifact: dict[str, Any], feature_row: dict[str, float]) -> dict[str, dict[str, float]]:

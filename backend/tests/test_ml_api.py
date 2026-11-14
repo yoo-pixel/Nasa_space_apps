@@ -94,6 +94,8 @@ def test_ml_model_info_reports_loaded_artifacts(client: TestClient) -> None:
     assert body["all_loaded"] is True
     assert len(body["models_loaded"]) == 5
     assert "resting_hr_bpm__z_drift" in body["input_feature_names"]
+    assert body["training_metrics"]["evaluation_target"] == "resting_hr_bpm__t+1"
+    assert "not clinical performance" in body["training_metrics"]["evaluation_note"]
 
 
 def test_existing_health_route_adds_model_status(client: TestClient) -> None:
@@ -101,6 +103,68 @@ def test_existing_health_route_adds_model_status(client: TestClient) -> None:
     assert response.status_code == 200
     body = response.json()
     assert body["status"] == "ok"
+    assert body["readiness"] == "ready"
+    assert body["forecast_ready"] is True
     assert body["service"] == "astronaut-health-research-api"
     assert len(body["models_loaded"]) == 5
+
+
+def test_health_initializes_registry_when_lifespan_was_not_entered() -> None:
+    response = TestClient(app).get("/api/v1/health")
+    assert response.status_code == 200
+    assert response.json()["forecast_ready"] is True
+
+
+def test_data_status_connects_collection_processing_and_training(client: TestClient) -> None:
+    response = client.get("/api/v1/ml/data-status")
+    assert response.status_code == 200, response.text
+    body = response.json()
+    assert body["pipeline_id"] == "astroguard-unified-demo-v1"
+    assert body["stages"]["processing"]["data_origin"] == "synthetic_demo_only"
+    assert body["stages"]["processing"]["astronaut_count"] == 3
+    assert body["stages"]["training"]["dataset_available"] is True
+    assert "osdr_cached_files" in body["stages"]["collection"]
+
+
+def test_local_dataset_flows_through_forecast_api(client: TestClient) -> None:
+    response = client.get("/api/v1/ml/forecast-from-dataset/AG-001?mission_day=20")
+    assert response.status_code == 200, response.text
+    body = response.json()
+    assert body["data_origin"] == "repository_synthetic_long_measurements"
+    assert body["astronaut_id"] == "AG-001"
+    assert body["mission_day"] == 20
+    assert len(body["systems"]["heart"]["trajectory"]) == 7
+    assert body["systems"]["heart"]["projected_risk_reduction_pct"] is None
+    assert body["systems"]["heart"]["scenario_candidate_for_review"] is None
+    assert "cabin_co2_mmhg" in body["data_quality"]["source_dataset"]["latest_missing_fields"]
+    assert body["systems"]["heart"]["input_coverage_pct"] < 100
+    assert not any(alert["sensor"] == "cabin_co2_mmhg" for alert in body["acute_alerts"])
+
+
+def test_missing_current_sensors_do_not_create_threshold_alerts(client: TestClient) -> None:
+    payload = _payload(3)
+    payload["mission_telemetry"][-1]["sbp_mmhg"] = None
+    payload["mission_telemetry"][-1]["cabin_co2_mmhg"] = None
+    response = client.post("/api/v1/ml/forecast", json=payload)
+    assert response.status_code == 200, response.text
+    body = response.json()
+    assert body["sudden_drop_detected"] is False
+    assert body["acute_alerts"] == []
+    assert body["data_quality"]["latest_observed_field_count"] < body["data_quality"]["expected_field_count"]
+
+
+def test_forecast_rejects_invalid_sensor_ranges(client: TestClient) -> None:
+    payload = _payload(3)
+    payload["mission_telemetry"][-1]["cabin_co2_mmhg"] = 500.0
+    response = client.post("/api/v1/ml/forecast", json=payload)
+    assert response.status_code == 422
+
+
+def test_dashboard_and_static_assets_are_served_by_backend(client: TestClient) -> None:
+    dashboard = client.get("/dashboard")
+    script = client.get("/dashboard-assets/app.js")
+    assert dashboard.status_code == 200
+    assert "Mission health" in dashboard.text
+    assert script.status_code == 200
+    assert "/api/v1/ml/forecast-from-dataset/" in script.text
 

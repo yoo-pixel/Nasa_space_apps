@@ -1,0 +1,73 @@
+{
+  "pipeline_id": "astroguard-unified-demo-v1",
+  "completed_at_utc": "2026-11-14T12:06:12.883554+00:00",
+  "offline": true,
+  "collection": {
+    "osdr": [],
+    "nlsp_local_file_count": 0,
+    "osdr_files": [],
+    "nlsp_local_files": []
+  },
+  "processing": {
+    "source": {
+      "path": "data/synthetic/measurements.csv",
+      "size_bytes": 684408,
+      "sha256": "5dc0fe5d59face828280df2ec243410d9b2a643aabfc4bd2dddd6e3764a6e008"
+    },
+    "data_origin": "synthetic_demo_only",
+    "normalized_output": {
+      "path": "backend/data/processed/normalized_demo_measurements.csv",
+      "size_bytes": 67145,
+      "sha256": "a569d13ef3470079640f9b116abd62c34052f790d4e6df1bb1c185d644dc4042"
+    },
+    "normalized_rows": 225,
+    "normalized_astronauts": 3
+  },
+  "training": {
+    "source": {
+      "path": "backend/data/processed/synthetic_demo_70day.csv",
+      "size_bytes": 1176736,
+      "sha256": "689f0655a75201f198a037ba4c8c4c18ca6d389405362c2c8c8190c8bac6a422"
+    },
+    "data_origin": "synthetic_demo_only",
+    "rows": 2550,
+    "astronauts": 30,
+    "metrics": {
+      "groupkfold_mae": 4.241908948558833,
+      "groupkfold_rmse": 5.5062773072669104,
+      "evaluation_target": "resting_hr_bpm__t+1",
+      "evaluation_horizon_days": 1,
+      "evaluation_unit": "bpm",
+      "evaluation_astronaut_groups": 30,
+      "evaluation_note": "Grouped holdout on synthetic data for heart rate at t+1 only; not clinical performance and not a score for the other systems or horizons."
+    },
+    "artifacts": [
+      {
+        "path": "backend/models/anomaly_detector.pkl",
+        "size_bytes": 979762,
+        "sha256": "da5b8d5b10bea3bd72b00af2eff0e6d761d616aec9e99b22e0ba2c1ca90a5203"
+      },
+      {
+        "path": "backend/models/bone_model.pkl",
+        "size_bytes": 208173,
+        "sha256": "5337428648ee41ee0a105bf0fb818b8782318d812fb4dc12f60f25cb6c491647"
+      },
+      {
+        "path": "backend/models/heart_model.pkl",
+        "size_bytes": 208027,
+        "sha256": "c2370437f066fe22aa46c6ed2249445eeb20abe6ce020642d8412aba91c3ab45"
+      },
+      {
+        "path": "backend/models/immune_model.pkl",
+        "size_bytes": 208191,
+        "sha256": "5d6c39a2eac799f52ab5495cb03fc99d811b21b6842745b1f259f6184287374d"
+      },
+      {
+        "path": "backend/models/nerve_model.pkl",
+        "size_bytes": 208276,
+        "sha256": "381b6f426a8e542a249246bf4d38221f1e95568486fce3df5d57d59e7e0a356b"
+      }
+    ],
+    "note": "OSDR/NLSP files are not training labels; their study-specific schemas need reviewed mappers first."
+  }
+}
