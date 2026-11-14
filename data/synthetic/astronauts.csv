@@ -1,0 +1,4 @@
+astronaut_id,name,age,sex,height_cm,mass_kg,medical_history,mission_start,mission_days,is_simulated
+AG-001,Demo Astronaut Alpha,38,F,168,62,Fictional: no significant history; endurance athlete.,2026-09-01,45,true
+AG-002,Demo Astronaut Bravo,45,M,182,86,Fictional: mild seasonal allergies; prior knee surgery (2019).,2026-09-01,45,true
+AG-003,Demo Astronaut Charlie,41,M,175,74,Fictional: none significant.,2026-09-01,45,true
