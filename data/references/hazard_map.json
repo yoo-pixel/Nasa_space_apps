@@ -1,0 +1,37 @@
+{
+  "_note": "The five hazard names and URLs come from NASA's HRP hazards page. The mapping to ASTROGUARD indicators is the team's DESIGN HYPOTHESIS, not a NASA statement. Individual health effects cannot be inferred from these categories alone.",
+  "source_id": "nasa-hrp-hazards",
+  "hazards": [
+    {
+      "hazard": "Space radiation",
+      "url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
+      "astroguard_variables": ["radiation_absorbed_dose", "radiation_dose_equivalent"],
+      "mapping_type": "design_hypothesis"
+    },
+    {
+      "hazard": "Isolation and confinement",
+      "url": "https://www.nasa.gov/hrp/hazard-isolation-and-confinement/",
+      "astroguard_variables": ["sleep_total_h", "sleep_time_in_bed_h", "eda"],
+      "mapping_type": "design_hypothesis"
+    },
+    {
+      "hazard": "Distance from Earth",
+      "url": "https://www.nasa.gov/hrp/hazard-distance-from-earth/",
+      "astroguard_variables": [],
+      "mapping_type": "design_rationale",
+      "note": "Motivates onboard, Earth-independent decision support. No direct measurement."
+    },
+    {
+      "hazard": "Gravity fields",
+      "url": "https://www.nasa.gov/hrp/hazard-gravity-fields/",
+      "astroguard_variables": ["bone_density", "grip_strength", "heart_rate", "bp_systolic", "bp_diastolic"],
+      "mapping_type": "design_hypothesis"
+    },
+    {
+      "hazard": "Hostile/closed environments",
+      "url": "https://www.nasa.gov/hrp/hazard-hostile-closed-environments/",
+      "astroguard_variables": ["skin_temp", "wbc", "hemoglobin"],
+      "mapping_type": "design_hypothesis"
+    }
+  ]
+}
